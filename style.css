@@ -1,0 +1,554 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    padding: 50px 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
+    background: #000;
+    padding: 8px 15px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0;
+    gap: 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+
+.hero-text{
+    padding-left: 30px;
+}
+
+.cta-button {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 25px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e6e6e6;
+}
+
+/* Gradient Boxes */
+.hero-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gradient-box {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.pink-gradient {
+    background: linear-gradient(135deg, #d00a0a, #ff85c0);
+    margin-right: 30px; /* Adjust this value to add space outside the box */
+}
+
+.blue-gradient {
+    background: linear-gradient(135deg, #0f8893, #35d49d);
+    
+    margin-right: 30px; /* Adjust this value to add space outside the box */
+}
+
+/* Our Work Section */
+.our-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 40px;
+    text-align: center;
+}
+
+.work-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.work-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.work-image:hover {
+    transform: scale(1.05);
+}
+
+.work-text {
+    max-width: 700px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.work-text h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.work-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* New Box Styling */
+.work-box {
+    background-color: #f0f8ff;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.work-box h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.work-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+
+/* What We Offer Section */
+.what-we-offer {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.offer-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.offer-text p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.offer-solutions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.solution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+    text-align: center;
+}
+
+.solution img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.solution p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Pricing Per Tier Section */
+.pricing-per-tier {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.pricing-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.pricing-tiers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.pricing-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.pricing-card hr {
+    border: 0;
+    height: 1px;
+    background: #fff;
+    margin: 20px 0;
+}
+
+.pricing-card .price {
+    font-size: 1.5rem;
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #000;
+    color: #000;
+    padding: 60px 20px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.testimonials-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card hr {
+    border: 0;
+    height: 1px;
+    background: #000;
+    margin-bottom: 20px;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.testimonial-author h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.testimonial-author p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #666;
+}
+
+
+/* Partner With The Best Section */
+.partner-with-best {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000;
+    color: #fff;
+    padding: 60px 20px;
+    align-items: center;
+    gap: 20px;
+}
+
+.partner-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    max-width: 600px;
+}
+
+.gradient-box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gradient-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    padding-right: 10px;
+}
+
+.gradient-top {
+    background: linear-gradient(135deg, #1e90ff, #87ceeb);
+}
+
+.gradient-middle {
+    background: linear-gradient(135deg, #ff69b4, #ff85c0);
+}
+
+.gradient-bottom {
+    background: linear-gradient(135deg, #ff69b4, #1e90ff);
+}
+
+.partner-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.partner-right {
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+}
+
+.partner-right h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.partner-right .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+.contact-info {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1); /* Makes the icons white to match the dark theme */
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Add a gap between each section */
+.container > * {
+    margin-bottom: 30px;
+}
+
+/* Apply to flex and grid containers for horizontal and vertical spacing */
+.hero, .hero-images, .work-images, .offer-solutions, .pricing-tiers, .testimonial-cards, .partner-with-best {
+    gap: 10px;
+}
+
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        padding: 40px 0;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+    }
+
+    .work-image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+    }
+
+    .offer-solutions {
+        flex-direction: column;
+    }
+
+    .pricing-tiers {
+        flex-direction: column;
+    }
+
+    .testimonial-card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+
+    .work-image {
+        width: 100%;
+    }
+}
