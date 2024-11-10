@@ -12,6 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -20,55 +21,107 @@ body {
     padding: 50px 0;
 }
 
+
 /* Header */
-.header {
+/* navber */
+
+.navbar {
     display: flex;
     align-items: center;
-    padding-bottom: 40px;
+    justify-content: space-between;
+    padding: 15px 1px;
+    margin-bottom: 1rem;
 }
 
 .logo {
-    font-size: 1.5rem;
-    color: #fff;
-    background: #000;
-    padding: 8px 15px;
-    border: 2px solid #fff;
-    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: #fff;
+    border-radius: 50px; /* Rounded background for the logo */
+    color: #333;
     font-weight: bold;
 }
 
-/* Hero Section */
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 70px 0;
-    gap: 20px;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    
+.logo:hover {
+    background-color: #fff;
+    color: #050505fd;
+    background: #04eeee;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-.hero-text {
-    max-width: 50%;
+.logo i {
+    margin-right: 8px;
+    color: #000; /* Icon color */
 }
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    flex: 1;
+    justify-content: right;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a {
+    display: inline-block;
+    padding: 2px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px; /* Rounded button style */
+    background-color: transparent; /* Transparent background */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 15px;
+    background-color: #fff; /* Hover background color */
+    color: #333; /* Hover text color */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glow effect on hover */
+}
+
+.nav-links li a:hover {
+    background-color: #fff;
+    color: #050505fd;
+    background: #04eeee;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.nav-links li a:focus {
+    outline: 2px solid #ff0000; /* Red outline to match the marked style */
+}
+
+.main_browse{
+    display: flex;           
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+/* navber end */
+
+/* top_border */
+.top_border{
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+/* Hero Section */
+
 
 .hero-text p {
     font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 22px;
+    margin-top: 2rem;
 }
 
 .hero-text h1 {
-    font-size: 3.5rem;
+    font-size: 5.5rem;
     font-weight: bold;
     margin-bottom: 25px;
     line-height: 1.2;
-}
-
-
-.hero-text{
-    padding-left: 30px;
 }
 
 .cta-button {
@@ -94,150 +147,112 @@ body {
     gap: 20px;
 }
 
-.gradient-box {
-    width: 250px;
-    height: 250px;
-    border-radius: 15px;
-}
 
 .pink-gradient {
-    background: linear-gradient(135deg, #d00a0a, #ff85c0);
-    margin-right: 30px; /* Adjust this value to add space outside the box */
+    background: linear-gradient(135deg, #ff69b4, #ff85c0);
 }
 
 .blue-gradient {
-    background: linear-gradient(135deg, #0f8893, #35d49d);
-    
-    margin-right: 30px; /* Adjust this value to add space outside the box */
+    background: linear-gradient(135deg, #1e90ff, #87ceeb);
 }
 
 /* Our Work Section */
 .our-work {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 20px;
-    background-color: #ffffff;
-    color: #333;
+    background: white;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    gap: 40px;
-    text-align: center;
+    
 }
+
+.work-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    color: #000;
+    margin: 1.5rem;
+}
+
 
 .work-images {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
-    justify-content: center;
-    width: 100%;
+    width: 50%;
+    height: 50%;
+    
 }
 
-.work-image {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
 
-.work-image:hover {
-    transform: scale(1.05);
-}
 
 .work-text {
-    max-width: 700px;
-    text-align: left;
-    margin: 0 auto;
+    max-width: 45%;
+    
 }
 
 .work-text h2 {
-    font-size: 2.4rem;
+    font-size: 4.8rem;
     font-weight: bold;
-    color: #000000;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 2rem;
 }
+
+.OurWorkh2new{
+    border: 2px solid black;
+    width: 90%;
+    margin-bottom: 13rem;
+    opacity: 1;
+  }
 
 .work-text p {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-/* New Box Styling */
-.work-box {
-    background-color: #f0f8ff;
-    color: #333;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 600px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.work-box h3 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #333;
+    font-size: 1.5rem;
+    line-height: 1.6;
     margin-bottom: 15px;
 }
-
-.work-box p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #666;
-}
-
 
 
 /* What We Offer Section */
 .what-we-offer {
     background-color: #000;
     color: #fff;
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
-    border: 1px solid #fff;
+    border: 2px solid;
     border-radius: 10px;
 }
 
-.offer-text h2 {
-    font-size: 2.5rem;
+.offer-text {
+    font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-.offer-text p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
+.what-we-offer p {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
 }
 
 .offer-solutions {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    gap: 15px;
+    justify-content: space-between;
 }
 
 .solution {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 150px;
+    width: calc((100% - 75px) / 6);
+    height: 150px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .solution img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-}
-
-.solution p {
-    font-size: 1rem;
-    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 /* Pricing Per Tier Section */
@@ -246,14 +261,14 @@ body {
     color: #fff;
     padding: 60px 20px;
     text-align: center;
-    border: 1px solid #fff;
+    margin-top: 3rem;
+    border: 2px solid;
     border-radius: 10px;
+    margin-bottom: 2rem;
 }
 
-.pricing-header h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 40px;
+.pricing-per-tier h2{
+    margin-bottom: 2rem;
 }
 
 .pricing-tiers {
@@ -299,25 +314,22 @@ body {
 
 .pricing-card .price {
     font-size: 1.5rem;
-    color: #ff6b6b;
+    color: #ff69b4;
     font-weight: bold;
 }
 
 
 /* Testimonials Section */
 .testimonials {
-    background-color: #000;
+    background-color: #fff;
     color: #000;
     padding: 60px 20px;
     text-align: center;
-    border: 1px solid #fff;
     border-radius: 10px;
 }
 
-.testimonials-header h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 40px;
+.testimonials h2{
+    margin-bottom: 2rem;
 }
 
 .testimonial-cards {
@@ -374,61 +386,6 @@ body {
     color: #666;
 }
 
-/* Technology We Use Section */
-.technology-we-use {
-    padding: 40px 20px;
-    background-color: #000;
-    color: #333;
-    text-align: center;
-    border: 1px solid #fff;
-    border-radius: 10px;
-}
-
-.technology-we-use h2 {
-    font-size: 2.4rem;
-    color: #1e90ff;
-    margin-bottom: 20px;
-}
-
-.tech-categories {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-}
-
-.tech-category {
-    flex: 1 1 200px;
-    max-width: 250px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.tech-category h3 {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
-    color: #1e90ff;
-}
-
-.tech-icons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.tech-icons img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
-}
-
-.tech-icons img:hover {
-    transform: scale(1.1);
-}
 
 /* Partner With The Best Section */
 .partner-with-best {
@@ -456,10 +413,14 @@ body {
 }
 
 .gradient-box {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 10px;
-    padding-right: 10px;
+}
+.gradient-box2 {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
 }
 
 .gradient-top {
@@ -521,89 +482,28 @@ body {
 }
 
 
-
-/* Add a gap between each section */
-.container > * {
-    margin-bottom: 30px;
-}
-
-/* Apply to flex and grid containers for horizontal and vertical spacing */
-.hero, .hero-images, .work-images, .offer-solutions, .pricing-tiers, .testimonial-cards, .partner-with-best, .technology-we-use {
-    gap: 10px;
-}
-
-
-/* Media Queries */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .hero {
         flex-direction: column;
-        padding: 40px 0;
+        align-items: flex-start;
     }
 
     .hero-text {
         max-width: 100%;
-        padding-left: 0;
     }
 
-    .hero-text h1 {
-        font-size: 2.5rem;
-    }
+    /* .work-images {
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    } */
 
-    .hero-text p {
-        font-size: 1.1rem;
-    }
-
-    .work-image {
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        padding: 30px 0;
-    }
-
-    .hero-text h1 {
-        font-size: 2rem;
-    }
-
-    .cta-button {
-        padding: 10px 20px;
-    }
-
-    .offer-solutions {
-        flex-direction: column;
-    }
-
-    .pricing-tiers {
-        flex-direction: column;
-    }
-
-    .testimonial-card {
-        width: 90%;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-text h1 {
-        font-size: 1.8rem;
+    .work-text {
+        max-width: 100%;
     }
 
     .cta-button {
         width: 100%;
-    }
-
-    .work-image {
-        width: 100%;
+        text-align: center;
     }
 }
