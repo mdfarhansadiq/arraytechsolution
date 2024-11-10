@@ -12,6 +12,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .container {
@@ -25,6 +27,7 @@ body {
     display: flex;
     align-items: center;
     padding-bottom: 40px;
+    width: 100%;
 }
 
 .logo {
@@ -35,6 +38,37 @@ body {
     border: 2px solid #fff;
     border-radius: 5px;
     font-weight: bold;
+    margin-right: 70px; 
+    text-decoration: none;/* Adjust the gap between logo and navbar */
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures space between logo and nav buttons */
+    padding: 10px 20px;
+    
+    background-color: #000;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: box-shadow 0.3s;
+}
+
+.nav-button:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Hero Section */
@@ -46,11 +80,11 @@ body {
     gap: 20px;
     border: 1px solid #fff;
     border-radius: 10px;
-    
 }
 
 .hero-text {
     max-width: 50%;
+    padding-left: 30px;
 }
 
 .hero-text p {
@@ -66,11 +100,6 @@ body {
     line-height: 1.2;
 }
 
-
-.hero-text{
-    padding-left: 30px;
-}
-
 .cta-button {
     font-size: 1rem;
     font-weight: 600;
@@ -81,6 +110,7 @@ body {
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
 .cta-button:hover {
@@ -102,13 +132,10 @@ body {
 
 .pink-gradient {
     background: linear-gradient(135deg, #d00a0a, #ff85c0);
-    margin-right: 30px; /* Adjust this value to add space outside the box */
 }
 
 .blue-gradient {
     background: linear-gradient(135deg, #0f8893, #35d49d);
-    
-    margin-right: 30px; /* Adjust this value to add space outside the box */
 }
 
 /* Our Work Section */
@@ -123,7 +150,9 @@ body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     gap: 40px;
     text-align: center;
+    border: 2px solid #e0e0e0; /* Add border inside the section */
 }
+
 
 .work-images {
     display: flex;
@@ -163,35 +192,9 @@ body {
 .work-text p {
     font-size: 1rem;
     line-height: 1.8;
-    color: #666;
+    color: #000;
     margin-bottom: 20px;
 }
-
-/* New Box Styling */
-.work-box {
-    background-color: #f0f8ff;
-    color: #333;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 600px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.work-box h3 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.work-box p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #666;
-}
-
-
 
 /* What We Offer Section */
 .what-we-offer {
@@ -201,6 +204,11 @@ body {
     text-align: center;
     border: 1px solid #fff;
     border-radius: 10px;
+}
+
+
+.what-we-offer h2{
+    margin-bottom: 10px;
 }
 
 .offer-text h2 {
@@ -250,6 +258,10 @@ body {
     border-radius: 10px;
 }
 
+.pricing-per-tier h2{
+    margin-bottom: 10px;
+}
+
 .pricing-header h2 {
     font-size: 2.5rem;
     font-weight: bold;
@@ -280,7 +292,6 @@ body {
 
 .pricing-card ul {
     list-style: none;
-    margin: 0;
     padding: 0;
     margin-bottom: 20px;
 }
@@ -290,19 +301,11 @@ body {
     margin-bottom: 10px;
 }
 
-.pricing-card hr {
-    border: 0;
-    height: 1px;
-    background: #fff;
-    margin: 20px 0;
-}
-
 .pricing-card .price {
     font-size: 1.5rem;
     color: #ff6b6b;
     font-weight: bold;
 }
-
 
 /* Testimonials Section */
 .testimonials {
@@ -312,6 +315,11 @@ body {
     text-align: center;
     border: 1px solid #fff;
     border-radius: 10px;
+}
+
+.testimonials h2{
+    color: #fff;
+    margin-bottom: 10px;
 }
 
 .testimonials-header h2 {
@@ -386,7 +394,7 @@ body {
 
 .technology-we-use h2 {
     font-size: 2.4rem;
-    color: #1e90ff;
+    color: #fff;
     margin-bottom: 20px;
 }
 
@@ -410,7 +418,7 @@ body {
 .tech-category h3 {
     font-size: 1.6rem;
     margin-bottom: 15px;
-    color: #1e90ff;
+    color: #000;
 }
 
 .tech-icons {
@@ -430,72 +438,60 @@ body {
     transform: scale(1.1);
 }
 
-/* Partner With The Best Section */
+
 .partner-with-best {
     display: flex;
-    flex-wrap: wrap;
-    background-color: #000;
-    color: #fff;
-    padding: 60px 20px;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
-}
-
-.partner-left {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    flex: 1;
-    max-width: 600px;
-}
-
-.gradient-box-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.gradient-box {
-    width: 100px;
-    height: 100px;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #000, #0c3245); /* Gradient background */
+    color: #fff;
     border-radius: 10px;
-    padding-right: 10px;
-}
-
-.gradient-top {
-    background: linear-gradient(135deg, #1e90ff, #87ceeb);
-}
-
-.gradient-middle {
-    background: linear-gradient(135deg, #ff69b4, #ff85c0);
-}
-
-.gradient-bottom {
-    background: linear-gradient(135deg, #ff69b4, #1e90ff);
-}
-
-.partner-image img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.partner-right {
-    flex: 1;
-    max-width: 600px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
     text-align: center;
+    gap: 20px;
 }
 
-.partner-right h2 {
+.partner-with-best h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-.partner-right .subtitle {
+.partner-with-best p {
     font-size: 1.2rem;
-    margin-bottom: 40px;
-    color: #ccc;
+    font-weight: 300;
+    margin: 5px 0;
 }
+
+.partner-with-best .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.partner-with-best .social-icons a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-with-best .social-icons a img {
+    width: 24px;
+    height: 24px;
+}
+
+.partner-with-best .social-icons a:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.5);
+}
+
 
 .contact-info {
     font-size: 1rem;
@@ -520,8 +516,6 @@ body {
     transform: scale(1.1);
 }
 
-
-
 /* Add a gap between each section */
 .container > * {
     margin-bottom: 30px;
@@ -530,6 +524,37 @@ body {
 /* Apply to flex and grid containers for horizontal and vertical spacing */
 .hero, .hero-images, .work-images, .offer-solutions, .pricing-tiers, .testimonial-cards, .partner-with-best, .technology-we-use {
     gap: 10px;
+}
+
+
+/* ... other styles ... */
+
+.scroll-up-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none; /* Hide by default */
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 24px; /* Adjust the font size for the arrow */
+}
+
+.scroll-up-button:hover {
+  opacity: 0.8;
+}
+
+/* Show button when user scrolls down */
+.scroll-up-button.show {
+  display: block;
+}
+
+/* Arrow-up icon */
+.scroll-up-button::before {
+  content: '\2191'; /* Unicode for arrow-up */
 }
 
 
@@ -603,7 +628,7 @@ body {
         width: 100%;
     }
 
-    .work-image {
+    .pricing-card, .testimonial-card {
         width: 100%;
     }
 }
