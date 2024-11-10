@@ -57,7 +57,7 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 15px;
+    gap: 25px;
     list-style: none;
     flex: 1;
     justify-content: right;
@@ -134,6 +134,7 @@ body {
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
 .cta-button:hover {
@@ -149,11 +150,11 @@ body {
 
 
 .pink-gradient {
-    background: linear-gradient(135deg, #ff69b4, #ff85c0);
+    background: linear-gradient(135deg, #d00a0a, #ff8585);
 }
 
 .blue-gradient {
-    background: linear-gradient(135deg, #1e90ff, #87ceeb);
+    background: linear-gradient(135deg, #0f8893, #35d49d);
 }
 
 /* Our Work Section */
@@ -314,7 +315,7 @@ body {
 
 .pricing-card .price {
     font-size: 1.5rem;
-    color: #ff69b4;
+    color:  #ff6b6b;;
     font-weight: bold;
 }
 
