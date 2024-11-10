@@ -47,7 +47,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Ensures space between logo and nav buttons */
-    padding: 10px 20px;
+    padding: 10px 100px;
     
     background-color: #000;
 }
@@ -559,7 +559,7 @@ body {
 
 
 /* Media Queries */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .hero {
         flex-direction: column;
         padding: 40px 0;
@@ -631,4 +631,58 @@ body {
     .pricing-card, .testimonial-card {
         width: 100%;
     }
+} */
+/* ... previous styles ... */
+
+/* ... previous styles ... */
+
+@media (max-width: 768px) {
+    /* ... existing styles ... */
+
+    .navbar {
+        flex-direction: column; /* Make navbar vertical */
+    }
+
+    .nav-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 30px 0; /* Adjust padding */
+    }
+
+    .offer-solutions {
+        flex-direction: column; /* Stack solutions vertically */
+    }
+
+    .pricing-tiers {
+        flex-direction: column; /* Stack pricing cards vertically */
+    }
+
+    .testimonial-cards {
+        flex-direction: column; /* Stack testimonials vertically */
+    }
+
+    .technology-we-use {
+        flex-direction: column; /* Stack tech categories vertically */
+    }
+}
+
+@media (max-width: 480px) {
+    /* ... existing styles ... */
+
+    .hero-text h1 {
+        font-size: 1.8rem; /* Further reduce font size */
+    }
+
+    .cta-button {
+        width: 100%; /* Make button full width */
+    }
+
+    .pricing-card, .testimonial-card {
+        width: 100%; /* Make cards full width */
+    }
+
+    /* Add more styles for extra-small screens here */
 }
