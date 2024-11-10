@@ -38,9 +38,10 @@ body {
     align-items: center;
     padding: 5px 15px;
     background-color: #fff;
-    border-radius: 50px; /* Rounded background for the logo */
+    border-radius: 10px; /* Rounded background for the logo */
     color: #333;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .logo:hover {
@@ -113,8 +114,8 @@ body {
 .hero-text p {
     font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 22px;
-    margin-top: 2rem;
+    margin-bottom: 5px;
+    margin-top: 7rem;
 }
 
 .hero-text h1 {
@@ -183,7 +184,11 @@ body {
     
 }
 
-
+.work-text h2{
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
 
 .work-text {
     max-width: 45%;
@@ -194,19 +199,14 @@ body {
     font-size: 4.8rem;
     font-weight: bold;
     margin-bottom: 15px;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 
-.OurWorkh2new{
-    border: 2px solid black;
-    width: 90%;
-    margin-bottom: 13rem;
-    opacity: 1;
-  }
+
 
 .work-text p {
-    font-size: 1.5rem;
-    line-height: 1.6;
+    font-size: 23px;
+    line-height: 1.4;
     margin-bottom: 15px;
 }
 
@@ -414,13 +414,13 @@ body {
 }
 
 .gradient-box {
-    width: 200px;
+    width: 100px;
     height: 200px;
     border-radius: 10px;
 }
 .gradient-box2 {
     width: 100%;
-    height: 300px;
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -483,28 +483,131 @@ body {
 }
 
 
+.scroll-up-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none; /* Hide by default */
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 24px; /* Adjust the font size for the arrow */
+}
+
+.scroll-up-button:hover {
+  opacity: 0.8;
+}
+
+/* Show button when user scrolls down */
+.scroll-up-button.show {
+  display: block;
+}
+
+/* Arrow-up icon */
+.scroll-up-button::before {
+  content: '\2191'; /* Unicode for arrow-up */
+}
+
+
+
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .hero-text {
-        max-width: 100%;
-    }
-
-    /* .work-images {
-        max-width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
-    } */
-
-    .work-text {
-        max-width: 100%;
-    }
-
-    .cta-button {
-        width: 100%;
-        text-align: center;
-    }
+  .navbar {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .nav-links {
+    flex-direction: column; /* Stack navigation links vertically */
+    gap: 10px;
+    justify-content: flex-start; /* Align links to the top */
+  }
+  .nav-links li a {
+    margin-top: 5px;
+  }
+  /* ... other media query styles ... */
+  /* Hero Section */
+  .hero {
+    flex-direction: column; /* Stack hero content vertically */
+    align-items: center;
+  }
+  .hero-text {
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+  .hero-text h1 {
+    font-size: 3rem; /* Adjust font size for smaller screens */
+    margin-bottom: 15px;
+  }
+  .cta-button {
+    width: 100%; /* Make button full width */
+    margin: 10px 0;
+  }
+  /* Our Work Section */
+  .work-content {
+    flex-direction: column; /* Stack work-images and work-text vertically */
+    padding: 20px;
+  }
+  .work-images {
+    width: 100%;
+  }
+  .work-text {
+    max-width: 100%;
+    text-align: center;
+  }
+  .work-text h2 {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+    margin-bottom: 10px;
+  }
+  /* ... other media query styles ... */
+  /* What We Offer Section */
+  .offer-solutions {
+    flex-direction: column; /* Stack solutions vertically */
+    gap: 10px;
+  }
+  .solution {
+    width: 100%; /* Make each solution full width */
+    height: 100px; /* Adjust height for smaller screens */
+  }
+  /* ... other media query styles ... */
+  /* Pricing Per Tier Section */
+  .pricing-tiers {
+    flex-direction: column; /* Stack pricing cards vertically */
+    gap: 10px;
+  }
+  .pricing-card {
+    width: 100%; /* Make each pricing card full width */
+  }
+  /* ... other media query styles ... */
+  /* Testimonials Section */
+  .testimonial-cards {
+    flex-direction: column; /* Stack testimonial cards vertically */
+    gap: 10px;
+  }
+  .testimonial-card {
+    width: 100%; /* Make each testimonial card full width */
+  }
+  /* ... other media query styles ... */
+  /* Partner With The Best Section */
+  .partner-with-best {
+    flex-direction: column; /* Stack partner content vertically */
+    align-items: center;
+  }
+  .partner-left {
+    width: 100%;
+  }
+  .partner-right {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  /* ... other media query styles ... */
 }
