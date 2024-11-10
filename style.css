@@ -12,8 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -22,79 +21,105 @@ body {
     padding: 50px 0;
 }
 
+
 /* Header */
-.header {
-    display: flex;
-    align-items: center;
-    padding-bottom: 40px;
-    width: 100%;
-}
+/* navber */
 
-.logo {
-    font-size: 1.5rem;
-    color: #fff;
-    background: #000;
-    padding: 8px 15px;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-right: 70px; 
-    text-decoration: none;/* Adjust the gap between logo and navbar */
-}
-
-/* Navigation Bar */
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Ensures space between logo and nav buttons */
-    padding: 10px 100px;
-    
-    background-color: #000;
-}
-
-.nav-buttons {
-    display: flex;
-    gap: 10px;
-}
-
-.nav-button {
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #000;
-    border-radius: 20px;
-    font-weight: 500;
-    transition: box-shadow 0.3s;
-}
-
-.nav-button:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Hero Section */
-.hero {
-    display: flex;
     justify-content: space-between;
+    padding: 15px 1px;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    display: flex;
     align-items: center;
-    padding: 70px 0;
-    gap: 20px;
-    border: 1px solid #fff;
+    padding: 5px 15px;
+    background-color: #fff;
+    border-radius: 10px; /* Rounded background for the logo */
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo:hover {
+    background-color: #fff;
+    color: #050505fd;
+    background: #04eeee;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.logo i {
+    margin-right: 8px;
+    color: #000; /* Icon color */
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    flex: 1;
+    justify-content: right;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a {
+    display: inline-block;
+    padding: 2px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px; /* Rounded button style */
+    background-color: transparent; /* Transparent background */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 15px;
+    background-color: #fff; /* Hover background color */
+    color: #333; /* Hover text color */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glow effect on hover */
+}
+
+.nav-links li a:hover {
+    background-color: #fff;
+    color: #050505fd;
+    background: #04eeee;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.nav-links li a:focus {
+    outline: 2px solid #ff0000; /* Red outline to match the marked style */
+}
+
+.main_browse{
+    display: flex;           
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+/* navber end */
+
+/* top_border */
+.top_border{
+    border: 2px solid;
     border-radius: 10px;
 }
 
-.hero-text {
-    max-width: 50%;
-    padding-left: 30px;
-}
+/* Hero Section */
+
 
 .hero-text p {
     font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    margin-top: 7rem;
 }
 
 .hero-text h1 {
-    font-size: 3.5rem;
+    font-size: 70px;
     font-weight: bold;
     margin-bottom: 25px;
     line-height: 1.2;
@@ -124,14 +149,9 @@ body {
     gap: 20px;
 }
 
-.gradient-box {
-    width: 250px;
-    height: 250px;
-    border-radius: 15px;
-}
 
 .pink-gradient {
-    background: linear-gradient(135deg, #d00a0a, #ff85c0);
+    background: linear-gradient(135deg, #d00a0a, #ff8585);
 }
 
 .blue-gradient {
@@ -140,112 +160,100 @@ body {
 
 /* Our Work Section */
 .our-work {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 20px;
-    background-color: #ffffff;
-    color: #333;
+    background: white;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    gap: 40px;
-    text-align: center;
-    border: 2px solid #e0e0e0; /* Add border inside the section */
+    
+}
+
+.work-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    color: #000;
+    margin: 1.5rem;
 }
 
 
 .work-images {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
-    justify-content: center;
-    width: 100%;
+    width: 50%;
+    height: 50%;
+    
 }
 
-.work-image {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+.work-text h2{
+    text-align: center;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.work-image:hover {
-    transform: scale(1.05);
+    border: 2px solid #000;
 }
 
 .work-text {
-    max-width: 700px;
-    text-align: left;
-    margin: 0 auto;
+    max-width: 45%;
+    
 }
 
 .work-text h2 {
-    font-size: 2.4rem;
+    font-size: 4.8rem;
     font-weight: bold;
-    color: #000000;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 15px;
+    /* margin-top: 2rem; */
 }
 
+
+
 .work-text p {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #000;
-    margin-bottom: 20px;
+    font-size: 23px;
+    line-height: 1.4;
+    margin-bottom: 15px;
 }
+
 
 /* What We Offer Section */
 .what-we-offer {
     background-color: #000;
     color: #fff;
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
-    border: 1px solid #fff;
+    border: 2px solid;
     border-radius: 10px;
 }
 
-
-.what-we-offer h2{
-    margin-bottom: 10px;
-}
-
-.offer-text h2 {
-    font-size: 2.5rem;
+.offer-text {
+    font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-.offer-text p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
+.what-we-offer p {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
 }
 
 .offer-solutions {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    gap: 15px;
+    justify-content: space-between;
 }
 
 .solution {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 150px;
+    width: calc((100% - 75px) / 6);
+    height: 150px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .solution img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-}
-
-.solution p {
-    font-size: 1rem;
-    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 /* Pricing Per Tier Section */
@@ -254,18 +262,14 @@ body {
     color: #fff;
     padding: 60px 20px;
     text-align: center;
-    border: 1px solid #fff;
+    margin-top: 3rem;
+    border: 2px solid;
     border-radius: 10px;
+    margin-bottom: 2rem;
 }
 
 .pricing-per-tier h2{
-    margin-bottom: 10px;
-}
-
-.pricing-header h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 2rem;
 }
 
 .pricing-tiers {
@@ -292,6 +296,7 @@ body {
 
 .pricing-card ul {
     list-style: none;
+    margin: 0;
     padding: 0;
     margin-bottom: 20px;
 }
@@ -301,31 +306,31 @@ body {
     margin-bottom: 10px;
 }
 
+.pricing-card hr {
+    border: 0;
+    height: 1px;
+    background: #fff;
+    margin: 20px 0;
+}
+
 .pricing-card .price {
     font-size: 1.5rem;
-    color: #ff6b6b;
+    color:  #ff6b6b;;
     font-weight: bold;
 }
 
+
 /* Testimonials Section */
 .testimonials {
-    background-color: #000;
+    background-color: #fff;
     color: #000;
     padding: 60px 20px;
     text-align: center;
-    border: 1px solid #fff;
     border-radius: 10px;
 }
 
 .testimonials h2{
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-.testimonials-header h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 2rem;
 }
 
 .testimonial-cards {
@@ -382,116 +387,77 @@ body {
     color: #666;
 }
 
-/* Technology We Use Section */
-.technology-we-use {
-    padding: 40px 20px;
-    background-color: #000;
-    color: #333;
-    text-align: center;
-    border: 1px solid #fff;
-    border-radius: 10px;
-}
 
-.technology-we-use h2 {
-    font-size: 2.4rem;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.tech-categories {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-}
-
-.tech-category {
-    flex: 1 1 200px;
-    max-width: 250px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.tech-category h3 {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
-    color: #000;
-}
-
-.tech-icons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.tech-icons img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
-}
-
-.tech-icons img:hover {
-    transform: scale(1.1);
-}
-
-
+/* Partner With The Best Section */
 .partner-with-best {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #000, #0c3245); /* Gradient background */
+    flex-wrap: wrap;
+    background-color: #000;
     color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    padding: 60px 20px;
+    align-items: center;
     gap: 20px;
 }
 
-.partner-with-best h2 {
+.partner-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    max-width: 600px;
+}
+
+.gradient-box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gradient-box {
+    width: 100px;
+    height: 200px;
+    border-radius: 10px;
+}
+.gradient-box2 {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.gradient-top {
+    background: linear-gradient(135deg, #1e90ff, #87ceeb);
+}
+
+.gradient-middle {
+    background: linear-gradient(135deg, #ff69b4, #ff85c0);
+}
+
+.gradient-bottom {
+    background: linear-gradient(135deg, #ff69b4, #1e90ff);
+}
+
+.partner-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.partner-right {
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+}
+
+.partner-right h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.partner-with-best p {
+.partner-right .subtitle {
     font-size: 1.2rem;
-    font-weight: 300;
-    margin: 5px 0;
+    margin-bottom: 40px;
+    color: #ccc;
 }
-
-.partner-with-best .social-icons {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.partner-with-best .social-icons a {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.partner-with-best .social-icons a img {
-    width: 24px;
-    height: 24px;
-}
-
-.partner-with-best .social-icons a:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.5);
-}
-
 
 .contact-info {
     font-size: 1rem;
@@ -516,18 +482,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Add a gap between each section */
-.container > * {
-    margin-bottom: 30px;
-}
-
-/* Apply to flex and grid containers for horizontal and vertical spacing */
-.hero, .hero-images, .work-images, .offer-solutions, .pricing-tiers, .testimonial-cards, .partner-with-best, .technology-we-use {
-    gap: 10px;
-}
-
-
-/* ... other styles ... */
 
 .scroll-up-button {
   position: fixed;
@@ -558,131 +512,102 @@ body {
 }
 
 
-/* Media Queries */
-/* @media (max-width: 1024px) {
-    .hero {
-        flex-direction: column;
-        padding: 40px 0;
-    }
 
-    .hero-text {
-        max-width: 100%;
-        padding-left: 0;
-    }
-
-    .hero-text h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-text p {
-        font-size: 1.1rem;
-    }
-
-    .work-image {
-        width: 100%;
-    }
-}
-
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        padding: 30px 0;
-    }
-
-    .hero-text h1 {
-        font-size: 2rem;
-    }
-
-    .cta-button {
-        padding: 10px 20px;
-    }
-
-    .offer-solutions {
-        flex-direction: column;
-    }
-
-    .pricing-tiers {
-        flex-direction: column;
-    }
-
-    .testimonial-card {
-        width: 90%;
-    }
+  .navbar {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .nav-links {
+    flex-direction: column; /* Stack navigation links vertically */
+    gap: 10px;
+    justify-content: flex-start; /* Align links to the top */
+  }
+  .nav-links li a {
+    margin-top: 5px;
+  }
+  /* ... other media query styles ... */
+  /* Hero Section */
+  .hero {
+    flex-direction: column; /* Stack hero content vertically */
+    align-items: center;
+  }
+  .hero-text {
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+  .hero-text h1 {
+    font-size: 3rem; /* Adjust font size for smaller screens */
+    margin-bottom: 15px;
+  }
+  .cta-button {
+    width: 100%; /* Make button full width */
+    margin: 10px 0;
+  }
+  /* Our Work Section */
+  .work-content {
+    flex-direction: column; /* Stack work-images and work-text vertically */
+    padding: 20px;
+  }
+  .work-images {
+    width: 100%;
+  }
+  .work-text {
+    max-width: 100%;
+    text-align: center;
+  }
+  .work-text h2 {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+    margin-bottom: 10px;
+  }
+  /* ... other media query styles ... */
+  /* What We Offer Section */
+  .offer-solutions {
+    flex-direction: column; /* Stack solutions vertically */
+    gap: 10px;
+  }
+  .solution {
+    width: 100%; /* Make each solution full width */
+    height: 100px; /* Adjust height for smaller screens */
+  }
+  /* ... other media query styles ... */
+  /* Pricing Per Tier Section */
+  .pricing-tiers {
+    flex-direction: column; /* Stack pricing cards vertically */
+    gap: 10px;
+  }
+  .pricing-card {
+    width: 100%; /* Make each pricing card full width */
+  }
+  /* ... other media query styles ... */
+  /* Testimonials Section */
+  .testimonial-cards {
+    flex-direction: column; /* Stack testimonial cards vertically */
+    gap: 10px;
+  }
+  .testimonial-card {
+    width: 100%; /* Make each testimonial card full width */
+  }
+  /* ... other media query styles ... */
+  /* Partner With The Best Section */
+  .partner-with-best {
+    flex-direction: column; /* Stack partner content vertically */
+    align-items: center;
+  }
+  .partner-left {
+    width: 100%;
+  }
+  .partner-right {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
 }
-
 @media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-text h1 {
-        font-size: 1.8rem;
-    }
-
-    .cta-button {
-        width: 100%;
-    }
-
-    .pricing-card, .testimonial-card {
-        width: 100%;
-    }
-} */
-/* ... previous styles ... */
-
-/* ... previous styles ... */
-
-@media (max-width: 768px) {
-    /* ... existing styles ... */
-
-    .navbar {
-        flex-direction: column; /* Make navbar vertical */
-    }
-
-    .nav-buttons {
-        flex-direction: column; /* Stack buttons vertically */
-    }
-
-    .hero {
-        flex-direction: column;
-        padding: 30px 0; /* Adjust padding */
-    }
-
-    .offer-solutions {
-        flex-direction: column; /* Stack solutions vertically */
-    }
-
-    .pricing-tiers {
-        flex-direction: column; /* Stack pricing cards vertically */
-    }
-
-    .testimonial-cards {
-        flex-direction: column; /* Stack testimonials vertically */
-    }
-
-    .technology-we-use {
-        flex-direction: column; /* Stack tech categories vertically */
-    }
-}
-
-@media (max-width: 480px) {
-    /* ... existing styles ... */
-
-    .hero-text h1 {
-        font-size: 1.8rem; /* Further reduce font size */
-    }
-
-    .cta-button {
-        width: 100%; /* Make button full width */
-    }
-
-    .pricing-card, .testimonial-card {
-        width: 100%; /* Make cards full width */
-    }
-
-    /* Add more styles for extra-small screens here */
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  /* ... other media query styles ... */
 }
