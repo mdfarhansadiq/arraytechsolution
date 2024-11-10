@@ -374,6 +374,61 @@ body {
     color: #666;
 }
 
+/* Technology We Use Section */
+.technology-we-use {
+    padding: 40px 20px;
+    background-color: #000;
+    color: #333;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.technology-we-use h2 {
+    font-size: 2.4rem;
+    color: #1e90ff;
+    margin-bottom: 20px;
+}
+
+.tech-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.tech-category {
+    flex: 1 1 200px;
+    max-width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.tech-category h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #1e90ff;
+}
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tech-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.tech-icons img:hover {
+    transform: scale(1.1);
+}
 
 /* Partner With The Best Section */
 .partner-with-best {
@@ -473,7 +528,7 @@ body {
 }
 
 /* Apply to flex and grid containers for horizontal and vertical spacing */
-.hero, .hero-images, .work-images, .offer-solutions, .pricing-tiers, .testimonial-cards, .partner-with-best {
+.hero, .hero-images, .work-images, .offer-solutions, .pricing-tiers, .testimonial-cards, .partner-with-best, .technology-we-use {
     gap: 10px;
 }
 
