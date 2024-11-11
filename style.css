@@ -38,7 +38,7 @@ body {
     align-items: center;
     padding: 5px 15px;
     background-color: #fff;
-    border-radius: 10px; /* Rounded background for the logo */
+    border-radius: 10px;
     color: #333;
     font-weight: bold;
     text-decoration: none;
@@ -53,7 +53,7 @@ body {
 
 .logo i {
     margin-right: 8px;
-    color: #000; /* Icon color */
+    color: #000;
 }
 
 .nav-links {
@@ -74,13 +74,13 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 15px; /* Rounded button style */
-    background-color: transparent; /* Transparent background */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 15px;
+    background-color: transparent;
+    transition: all 0.3s ease;
     margin-top: 15px;
-    background-color: #fff; /* Hover background color */
-    color: #333; /* Hover text color */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glow effect on hover */
+    background-color: #fff;
+    color: #333; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .nav-links li a:hover {
@@ -99,6 +99,15 @@ body {
     justify-content: space-between;
     gap: 10px;
     padding: 10px;
+}
+
+.mobile_menu_icon {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 /* navber end */
 
@@ -240,6 +249,7 @@ body {
     display: flex;
     gap: 15px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .solution {
@@ -414,7 +424,7 @@ body {
 }
 
 .gradient-box {
-    width: 100px;
+    width: 200px;
     height: 200px;
     border-radius: 10px;
 }
@@ -513,101 +523,82 @@ body {
 
 
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column; /* Stack navigation items vertically */
-    align-items: flex-start;
-    padding: 10px;
-  }
-  .nav-links {
-    flex-direction: column; /* Stack navigation links vertically */
-    gap: 10px;
-    justify-content: flex-start; /* Align links to the top */
-  }
-  .nav-links li a {
-    margin-top: 5px;
-  }
-  /* ... other media query styles ... */
-  /* Hero Section */
-  .hero {
-    flex-direction: column; /* Stack hero content vertically */
-    align-items: center;
-  }
-  .hero-text {
-    max-width: 90%;
-    margin-bottom: 20px;
-  }
-  .hero-text h1 {
-    font-size: 3rem; /* Adjust font size for smaller screens */
-    margin-bottom: 15px;
-  }
-  .cta-button {
-    width: 100%; /* Make button full width */
-    margin: 10px 0;
-  }
-  /* Our Work Section */
-  .work-content {
-    flex-direction: column; /* Stack work-images and work-text vertically */
-    padding: 20px;
-  }
-  .work-images {
-    width: 100%;
-  }
-  .work-text {
-    max-width: 100%;
-    text-align: center;
-  }
-  .work-text h2 {
-    font-size: 2.5rem; /* Adjust font size for smaller screens */
-    margin-bottom: 10px;
-  }
-  /* ... other media query styles ... */
-  /* What We Offer Section */
-  .offer-solutions {
-    flex-direction: column; /* Stack solutions vertically */
-    gap: 10px;
-  }
-  .solution {
-    width: 100%; /* Make each solution full width */
-    height: 100px; /* Adjust height for smaller screens */
-  }
-  /* ... other media query styles ... */
-  /* Pricing Per Tier Section */
-  .pricing-tiers {
-    flex-direction: column; /* Stack pricing cards vertically */
-    gap: 10px;
-  }
-  .pricing-card {
-    width: 100%; /* Make each pricing card full width */
-  }
-  /* ... other media query styles ... */
-  /* Testimonials Section */
-  .testimonial-cards {
-    flex-direction: column; /* Stack testimonial cards vertically */
-    gap: 10px;
-  }
-  .testimonial-card {
-    width: 100%; /* Make each testimonial card full width */
-  }
-  /* ... other media query styles ... */
-  /* Partner With The Best Section */
-  .partner-with-best {
-    flex-direction: column; /* Stack partner content vertically */
-    align-items: center;
-  }
-  .partner-left {
-    width: 100%;
-  }
-  .partner-right {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-  }
+@media (max-width: 1243px) {
+    .nav-links{
+        gap: 10px;
+    }
 }
-@media (max-width: 480px) {
-  .hero-text h1 {
-    font-size: 2.5rem;
-  }
-  /* ... other media query styles ... */
+@media (max-width: 1150px) {
+    .logo{
+        padding: 5px 5px;
+    }
+    .nav-links li a {
+        padding: 2px 9px;
+    }
+    .hero-text h1 {
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 3rem;
+    }
+    .gradient-box {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+}
+@media (max-width: 1150px) {
+    .solution {
+        width: calc((100% - 75px) / 6);
+        height: 140px;
+    }
+
+}
+@media (max-width: 992px) {
+    .work-text h2 {
+        font-size: 3.8rem;
+    }
+    .offer-solutions {
+        gap: 20px;
+    }
+    .solution {
+        width: calc((100% - 60px) / 3); /* Adjust for 3 columns on smaller screens */
+    }
+    .nav-links {
+        display: block;
+        background: #000;
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        left: 0;
+        padding-left: 0;
+    }
+    .nav-links li {
+        display: block;
+        width: 100%;
+        background: transparent;
+        border-top: 1px solid #ddd;
+    }
+    .nav-links li a {
+        display: block;
+        padding: 20px;
+        background: transparent;
+        color: white;
+        border: none;
+        border-radius: unset;
+        box-shadow: none;
+        font-size: 1.2rem;
+    }
+    .solution{
+        width: calc(100% -60px / 3);
+        height: fit-content;
+    }
+
+    .mobile_menu_icon{
+        display: block;
+    }
+}
+
+.display_none{
+    display: none;
 }
