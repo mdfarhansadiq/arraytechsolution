@@ -17,3 +17,21 @@ scrollUpButton.addEventListener('click', () => {
 		behavior: 'smooth' // Smooth scrolling effect
 	});
 });
+
+
+
+// Toggle navigation menu on burger menu click
+const burgerMenu = document.getElementById("burger-menu");
+const navLinks = document.querySelector(".nav-links");
+const closeMenu = document.getElementById("close-menu");
+
+
+
+burgerMenu.addEventListener("click", () => {
+		navLinks.classList.toggle("nav-active");
+});
+
+// Close menu when clicking the close button
+closeMenu.addEventListener("click", () => {
+		navLinks.classList.remove("nav-active");
+});
