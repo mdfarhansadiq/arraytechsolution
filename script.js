@@ -35,3 +35,15 @@ burgerMenu.addEventListener("click", () => {
 closeMenu.addEventListener("click", () => {
 		navLinks.classList.remove("nav-active");
 });
+
+
+// Newsletter form validation with reCAPTCHA
+function validateForm(event) {
+		event.preventDefault();
+		if (grecaptcha.getResponse() === '') {
+				alert('Please verify that you are not a robot.');
+				return false;
+		}
+		// Add your form submission logic here
+		return false;
+}

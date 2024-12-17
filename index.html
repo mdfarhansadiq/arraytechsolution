@@ -25,7 +25,7 @@
     <!-- Choices.js CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
 
-    
+
     <!-- Slick CSS -->
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
@@ -34,6 +34,7 @@
 
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -206,32 +207,55 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section class="partner-with-best" id="contact">
-            <h2>PARTNER WITH THE BEST</h2>
-            <p>DESIGN THE FUTURE NOW</p>
-            <p>(123) 456-7890</p>
-            <p>hello@reallygreatsite.com</p>
-            <!-- <div class="social-icons">
-                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-            </div> -->
-            <div class="social-icons">
-                <a href="#" style="font-size: 30px; text-decoration: none; color: #3b5998;">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" style="font-size: 30px; text-decoration: none; color: #e4405f;">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" style="font-size: 30px; text-decoration: none; color: #1da1f2;">
-                    <i class="fab fa-twitter"></i>
-                </a>
+        <footer class="footer" id="contact">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone-alt"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-envelope"></i> hello@reallygreatsite.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 100</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="#portfolio"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <form class="newsletter-form" onsubmit="return validateForm(event)">
+                        <input type="email" placeholder="Enter your email" required>
+                        <div class="g-recaptcha" data-sitekey="6LdX1Z0qAAAAAHEWH1gU84HC8Xc-KtlB9rW52Fr9"></div>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
             </div>
-        </section>
-        <button id="scroll-up" class="scroll-up-button">
-            <span class="arrow-up"></span>
-        </button>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            <button id="scroll-up" class="scroll-up-button">
+                <span class="arrow-up"></span>
+            </button>
+        </footer>
+
     </div>
     <script src="script.js"></script>
 
